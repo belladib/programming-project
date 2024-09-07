@@ -2,10 +2,19 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    double gallons(20), mpgTown(23.5), mpgHighway(28.9);
+    double DistanceT = gallons * mpgTown;
+    double DistanceH = gallons * mpgHighway;
+
+    cout << "you can drive " << DistanceT << " miles in a town with " << gallons << " gallons of gas\n\n"
+    
+        << "you can drive " << DistanceH << " miles on the highway with " << gallons << " gallons of gas\n";
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
