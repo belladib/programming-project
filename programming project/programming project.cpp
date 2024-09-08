@@ -2,10 +2,25 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    double customers(16'500), purchWeekly(.15), prefCitrus(.58);
+
+    double amtWeekly = customers * purchWeekly;
+
+    double amtPref = customers * prefCitrus; 
+
+    cout << "the number of customers that buy one or more energy drinks weekly is " << amtWeekly <<
+        "\n\nthe number of customers that have a preference to the citrus flavored drinks is " << amtPref << '\n';
+    
+
+    return 0;
+
+
+
+
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
